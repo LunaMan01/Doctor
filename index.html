@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/lightpick.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron pb-1">
+            <div class="row">
+                <h1 class="display-4 col-10">Dr. Roberto Sanchez</h1>
+                <div class="col-2">
+                    <img src="vara.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <p class="lead">Medico cirujano partero</p>
+            <hr class="my-4">
+            <div class="row">
+                <p class="col-6">Teléfono: 123456</p>
+                <p class="col-6 text-right">Cedula profecional: 123456789</p>
+                <p class="col-6">Dirección: 123456</p>
+            </div>
+        </div>
+            <form action="./receive.html" id="form">
+                <div class="conyainer-fluid">
+                    <div class="row form-group">
+                        <div class="col-12 col-lg-4">
+                            <label for="nombre" class="col-form-label">Nombre del paciente:</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control rounded-pill">
+                            <label for="edad" class="col-form-label">Edad:</label>
+                            <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' type="text" name="edad" id="edad" class="form-control rounded-pill">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <label for="fecha" class="col-form-label">Fecha:</label>
+                            <input type="date" name="fecha" id="fecha" class="form-control rounded-pill">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h1 class="my-0">
+                                <button class="btn btn-link font-weight-bold t " type="button" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    Datos Personales
+                                </button>
+                            </h1>
+                        </div>
+        
+                        <div class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" id="collapseOne">
+                            <div class="card-body">
+                                <div class="container-fluid">
+                                    <div class="row form-group">
+                                        <div class="col-12 col-lg-5">
+                                            <label for="genero" class="col-form-label">Genero:</label>
+                                            <input type="text" name="genero" id="genero" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-5">
+                                        </div>
+                                        <div class="col-12 col-lg-7">
+                                            <label for="direccion" class="col-form-label">Direccion:</label>
+                                            <input type="text" name="direccion" id="direccion" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-5">
+                                        </div>
+                                        <div class="col-12 col-lg-5">
+                                            <label for="telefono" class="col-form-label">Teléfono:</label>
+                                            <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' type="text" name="telefono" id="telefono" class="form-control rounded-pill">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="my-0">
+                                <button class="btn btn-link collapsed font-weight-bold t" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Historial Clínico
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="container-fluid">
+                                    <div class="row form-group">
+                                        <div class="col-12 col-lg-4">
+                                            <label for="motivo-consulta" class="col-form-label">Motivo de la consulta:</label>
+                                            <input type="text" name="motivo-consulta" id="motivo-consulta" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <label for="terapeutica-previa" class="col-form-label">Terapéutica previa:</label>
+                                            <input type="text" name="terapeutica-previa" id="terapeutica-previa"
+                                                class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <label for="cirugias" class="col-form-label">Cirugías realizadas:</label>
+                                            <input type="text" name="cirugias" id="cirugias" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <label for="tipo-sangre" class="col-form-label">Tipo de sangre:</label>
+                                            <input type="text" name="tipo-sangre" id="tipo-sangre" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <label for="alergias" class="col-form-label">Alergias:</label>
+                                            <input type="text" name="alergias" id="alergias" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <label for="diagnostico-previo" class="col-form-label">Diagnostico previo:</label>
+                                            <input type="text" name="diagnostico-previo" id="diagnostico-previo"
+                                                class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <label for="vacunas" class="col-form-label">Vacunas(inmunizaciones):</label>
+                                            <input type="text" name="vacunas" id="vacunas" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <label for="antecedentes-heredo" class="col-form-label">Antecedentes
+                                                heredo-familiares:</label>
+                                            <input type="text" name="antecedentes-heredo" id="antecedentes-heredo"
+                                                class="form-control rounded-pill">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h1 class="my-0">
+                                <button class="btn btn-link collapsed font-weight-bold t" type="button" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Próxima cita
+                                </button>
+                            </h1>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="container-fluid">
+                                    <div class="row form-group">
+                                        <div class="col-12 col-lg-4">
+                                            <label for="paciente" class="col-form-label">Nombre del paciente:</label>
+                                            <input type="text" name="paciente" id="paciente" class="form-control rounded-pill">
+                                        </div>
+                                        
+                                        <div class="col-12 col-lg-6">
+                                            <label for="tel" class="col-form-label">Teléfono:</label>
+                                            <input onkeypress='return event.charCode >= 48 && event.charCode <= 57' type="text" name="tel" id="tel" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <label for="correo-electronico" class="col-form-label">Correo electrónico:</label>
+                                            <input type="email" name="correo-electronico" id="correo-electronico" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <label for="proxima-cita" class="col-form-label">Fecha de próxima cita:</label>
+                                            <input type="date" name="proxima-cita" id="proxima-cita" class="form-control rounded-pill">
+                                        </div>
+                                        <div class="col-12 col-lg-4">
+                                            <label for="hora-cita" class="col-form-label">Hora de cita:</label>
+                                            <input type="time" name="hora-cita" id="hora-cita" class="form-control rounded-pill">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <input type="submit" class="btn btn-success" value="Enviar" />
+                                    <input type="reset" class="btn btn-success" value="Borrar" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function() {
+            localStorage.setItem('name', document.getElementById('nombre').value);
+            localStorage.setItem('edad', document.getElementById('edad').value);
+            localStorage.setItem('fecha', document.getElementById('fecha').value);
+            localStorage.setItem('genero', document.getElementById('genero').value);
+            localStorage.setItem('direccion', document.getElementById('direccion').value);
+            localStorage.setItem('telefono', document.getElementById('telefono').value);
+            localStorage.setItem('motivo', document.getElementById('motivo-consulta').value);
+            localStorage.setItem('terapeutica', document.getElementById('terapeutica-previa').value);
+            localStorage.setItem('cirugias', document.getElementById('cirugias').value);
+            localStorage.setItem('sangre', document.getElementById('tipo-sangre').value);
+            localStorage.setItem('alergias', document.getElementById('alergias').value);
+            localStorage.setItem('diagnostico', document.getElementById('diagnostico-previo').value);
+            localStorage.setItem('vacunas', document.getElementById('vacunas').value);
+            localStorage.setItem('antecedentes', document.getElementById('antecedentes-heredo').value);
+            localStorage.setItem('paciente', document.getElementById('paciente').value);
+            localStorage.setItem('tel', document.getElementById('tel').value);
+            localStorage.setItem('correo', document.getElementById('correo-electronico').value);
+            localStorage.setItem('proxima', document.getElementById('proxima-cita').value);
+            localStorage.setItem('hora', document.getElementById('hora-cita').value);
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

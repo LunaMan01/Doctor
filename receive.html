@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="writes">
+        <p id="write">Nombre: </p>
+    </div>
+
+    <script>
+        function show(){
+            var nombre = localStorage.getItem('name');
+            var edad = localStorage.getItem('edad');
+            var fecha = localStorage.getItem('fecha');
+            var genero = localStorage.getItem('genero');
+            var direccion = localStorage.getItem('direccion');
+            var telefono = localStorage.getItem('telefono');
+            var motivo = localStorage.getItem('motivo');
+            var terapeutica = localStorage.getItem('terapeutica');
+            var cirugias = localStorage.getItem('cirugias');
+            var sangre = localStorage.getItem('sangre');
+            var alergias = localStorage.getItem('alergias');
+            var diagnostico = localStorage.getItem('diagnostico');
+            var vacunas = localStorage.getItem('vacunas');
+            var antecedentes = localStorage.getItem('antecedentes');
+            var paciente = localStorage.getItem('paciente');
+            var tel = localStorage.getItem('tel');
+            var correo = localStorage.getItem('correo');
+            var proxima = localStorage.getItem('proxima');
+            var hora = localStorage.getItem('hora');
+
+            document.getElementById("write").innerHTML += nombre += edad += fecha += genero += direccion += telefono += motivo += terapeutica 
+                += cirugias += sangre += alergias += diagnostico += vacunas += antecedentes += paciente += tel += correo += proxima += hora;
+            console.log(tel)
+        }
+        show()
+    </script>
+</body>
+</html>
